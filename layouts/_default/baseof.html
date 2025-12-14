@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+<body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ if .IsHome }}Jarvis Black{{ else }}{{ .Title }} | Jarvis Black{{ end }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ with .Params.description }}
+  <meta name="description" content="{{ . }}">
+  {{ end }}
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+</head>
+
+<main>
+  {{ block "main" . }}{{ end }}
+</main>
+
+<footer>
+  <hr>
+  <small>© {{ now.Year }} Jarvis Black</small>
+</footer>
+
+</body>
+</html>
