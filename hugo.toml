@@ -1,3 +1,4 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://jarvisblack.com/"
+languageCode = "pt-br"
+title = "Jarvis Black"
+
