@@ -1,7 +1,12 @@
 {{ define "main" }}
+
 <article>
-  <h2>{{ .Title }}</h2>
-  <p><small>{{ .Date.Format "02/01/2006" }}</small></p>
-  {{ .Content }}
+  <h1>{{ .Title }}</h1>
+
+  <div>
+    {{ .Content }}
+  </div>
 </article>
+
 {{ end }}
+
