@@ -2,3 +2,7 @@ baseURL = "https://rodrigobreno14vr-ui.github.io/jarvis-black/"
 languageCode = "pt-br"
 title = "Jarvis Black"
 enableRobotsTXT = true
+
+[params]
+description = "Jarvis Black — tecnologia, Linux e desenvolvimento real."
+
