@@ -1,12 +1,5 @@
+Aqui estão os artigos técnicos do projeto.
 
----
+👉 **[Como construir um site do zero sem WordPress](/posts/site-do-zero-sem-wordpress/)**  
+👉 Outros conteúdos em desenvolvimento.
 
-👉 [← Voltar para Home](/)
-
----
-title: "Conteúdo"
----
-
-Artigos técnicos, guias práticos e documentação real.
-
-Conteúdo em evolução.
