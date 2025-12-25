@@ -1,23 +1,82 @@
+/* =========================
+   HOME – HERO
+   ========================= */
+
+.home-hero {
+  max-width: var(--max-width);
+  margin: 3rem auto 4rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #0b1220, #020617);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.home-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.home-subtitle {
+  color: var(--muted);
+  font-size: 1.2rem;
+}
 
 /* =========================
-   HOME
+   HOME – CONTEÚDO
    ========================= */
 
 .home-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2.5rem;
 }
 
-.home-section + .home-section {
-  margin-top: 3rem;
+/* =========================
+   LISTA DE POSTS
+   ========================= */
+
+.post-list {
+  display: grid;
+  gap: 2rem;
 }
 
-.home-content > h2 {
-  margin-top: 2.5rem;
+.post-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.8rem;
 }
 
-.home-content ul {
-  margin-top: 1rem;
+.post-card h2 {
+  margin-top: 0;
 }
+
+.post-card p {
+  color: var(--muted);
+}
+
+.post-card a {
+  font-weight: 600;
+}
+
+/* =========================
+   POST INDIVIDUAL
+   ========================= */
+
+.post-editorial {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.post-content {
+  margin-top: 2rem;
+}
+
+.post-content p {
+  margin: 1.2rem 0;
+}
+

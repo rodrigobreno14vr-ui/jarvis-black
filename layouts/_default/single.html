@@ -3,11 +3,8 @@
 <article class="post-editorial">
   <header>
     <h1>{{ .Title }}</h1>
-
     <p class="post-meta">
-      {{ with .Date }}
-        {{ .Format "02 Jan 2006" }}
-      {{ end }}
+      {{ with .Date }}{{ .Format "02 Jan 2006" }}{{ end }}
       · {{ .ReadingTime }} min
     </p>
   </header>
@@ -16,10 +13,8 @@
     {{ .Content }}
   </section>
 
-  <footer class="post-footer">
-    <p>
-      <a href="/posts/">← Voltar para Posts</a>
-    </p>
+  <footer>
+    <p><a href="/posts/">← Voltar para Posts</a></p>
   </footer>
 </article>
 

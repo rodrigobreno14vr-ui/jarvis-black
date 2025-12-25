@@ -1,11 +1,22 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
 
-<ul>
+<section class="post-list">
   {{ range .Pages }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </li>
+    <article class="post-card">
+      <h2>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+
+      {{ with .Summary }}
+        <p>{{ . }}</p>
+      {{ end }}
+
+      <p class="post-meta">
+        {{ with .Date }}{{ .Format "02 Jan 2006" }}{{ end }}
+      </p>
+    </article>
   {{ end }}
-</ul>
+</section>
+
 {{ end }}
+
