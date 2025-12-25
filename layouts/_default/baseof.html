@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <head>
-  {{ partial "seo.html" . }}
-  <link rel="stylesheet" href="/css/style.css">
-</head>
+  <meta charset="UTF-8">
 
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- View Transitions (Baseline 2025) -->
+  <meta name="view-transition" content="same-origin">
+
+  <!-- CSS GLOBAL -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  {{ partial "seo.html" . }}
 </head>
 
 <body>
 
-<header>
-  <strong>{{ .Site.Title }}</strong>
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="logo">
+      {{ partial "logo.html" . }}
+    </a>
+
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/posts/">Posts</a>
+    </div>
+  </nav>
 </header>
 
-<main>
+<main class="site-main">
   {{ block "main" . }}{{ end }}
 </main>
 
-<footer>
-  © {{ now.Year }} {{ .Site.Title }}
+<footer class="site-footer">
+  © {{ now.Year }} {{ .Site.Title }} — Construindo sistemas reais.
 </footer>
 
 </body>

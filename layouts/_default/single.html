@@ -1,12 +1,30 @@
 {{ define "main" }}
 
-<article>
-  <h1>{{ .Title }}</h1>
+<article class="post-editorial">
+  <header>
+    <h1>{{ .Title }}</h1>
+    <p class="post-meta">
+      {{ .Date.Format "02 Jan 2006" }} · {{ .ReadingTime }} min
+    </p>
+  </header>
 
-  <div>
+  <section class="post-content">
     {{ .Content }}
-  </div>
+  </section>
 </article>
 
 {{ end }}
 
+@layer theme {
+  @media (prefers-color-scheme: light) {
+    body {
+      background: #f8fafc;
+      color: #020617;
+    }
+
+    .card {
+      background: #ffffff;
+      border-color: #e5e7eb;
+    }
+  }
+}
