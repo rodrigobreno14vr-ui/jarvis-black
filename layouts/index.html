@@ -1,7 +1,14 @@
 {{ define "main" }}
 
 <section class="home">
-  {{ .Content }}
+
+  <section class="home-section">
+    <h1>{{ .Title }}</h1>
+    <div class="home-content">
+      {{ .Content }}
+    </div>
+  </section>
+
 </section>
 
 {{ end }}
