@@ -1,8 +1,11 @@
 baseURL = "http://localhost:1313/"
 languageCode = "pt-br"
 title = "Jarvis Black"
+
+# SEO básico
 enableRobotsTXT = true
 
 [params]
-description = "Jarvis Black — tecnologia, Linux e desenvolvimento real."
+  description = "Jarvis Black — tecnologia, Linux e desenvolvimento prático."
+  tagline = "Sites rápidos, simples e sob controle"
 

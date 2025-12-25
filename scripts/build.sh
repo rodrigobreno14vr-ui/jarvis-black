@@ -1,19 +1,13 @@
 #!/bin/bash
 
-echo "🔧 Iniciando build do Jarvis Black..."
+# Script de build do site Jarvis Black
+# Gera a pasta public/ pronta para deploy
 
-# Ir para a raiz do projeto
-cd "$(dirname "$0")/.."
-
-# Limpar build antigo
+echo "🔧 Limpando build anterior..."
 rm -rf public
 
-# Gerar site
-hugo --minify
+echo "🏗️ Gerando site estático..."
+hugo
 
-if [ $? -eq 0 ]; then
-  echo "✅ Build concluído com sucesso."
-else
-  echo "❌ Erro no build."
-  exit 1
-fi
+echo "✅ Build concluído com sucesso!"
+
