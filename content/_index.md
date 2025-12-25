@@ -1,18 +1,24 @@
 ---
-title: "Jarvis Black"
-description: "Construindo sistemas reais com Hugo, Shell, Git e SEO técnico."
+title: "Home"
 ---
 
-## Construindo sistemas reais.
+## Construindo sistemas reais
 
-Este é um projeto em **modo difícil**.  
-Aqui eu documento aprendizados reais sobre:
+Projetos simples, funcionais e pensados para uso real.
 
-- Hugo (sites estáticos profissionais)
-- Shell Script
-- Git e GitHub
-- SEO técnico de verdade
+---
+## Navegação
+## Navegação
 
-👉 Comece pelo post pilar:
+- 👉 [Projetos](/projetos/)
+- 👉 [Conteúdo técnico](/posts/)
+- 👉 [Sobre](/sobre/)
+- 👉 [Contato](/contato/)
 
-[Como construir um site do zero sem WordPress (e por que isso muda tudo)](/posts/site-do-zero-sem-wordpress/)
+---
+
+## Destaque
+
+🧩 **Jarvis Black**  
+Site estático profissional desenvolvido com Hugo.
+

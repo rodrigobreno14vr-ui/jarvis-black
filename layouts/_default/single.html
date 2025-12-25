@@ -3,28 +3,25 @@
 <article class="post-editorial">
   <header>
     <h1>{{ .Title }}</h1>
+
     <p class="post-meta">
-      {{ .Date.Format "02 Jan 2006" }} · {{ .ReadingTime }} min
+      {{ with .Date }}
+        {{ .Format "02 Jan 2006" }}
+      {{ end }}
+      · {{ .ReadingTime }} min
     </p>
   </header>
 
   <section class="post-content">
     {{ .Content }}
   </section>
+
+  <footer class="post-footer">
+    <p>
+      <a href="/posts/">← Voltar para Posts</a>
+    </p>
+  </footer>
 </article>
 
 {{ end }}
 
-@layer theme {
-  @media (prefers-color-scheme: light) {
-    body {
-      background: #f8fafc;
-      color: #020617;
-    }
-
-    .card {
-      background: #ffffff;
-      border-color: #e5e7eb;
-    }
-  }
-}
