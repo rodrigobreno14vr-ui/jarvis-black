@@ -1,18 +1,17 @@
 /* =========================
-   HEADER / MENU FIXO
+   HEADER / MENU – REFINADO
    ========================= */
 
-/* Barra superior fixa */
 .site-header {
-  position: sticky;           /* Fica fixa ao rolar */
+  position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(2, 6, 23, 0.95);
+  background: rgba(2, 6, 23, 0.92);
   border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
 }
 
-/* Container central */
+/* Container */
 .header-container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -25,20 +24,48 @@
 
 /* Logo */
 .logo a {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #f9fafb;
+  letter-spacing: 0.5px;
 }
 
-/* Navegação */
+/* Menu */
 .nav a {
-  margin-left: 1.2rem;
+  margin-left: 1.4rem;
   font-size: 0.95rem;
   color: var(--muted);
+  position: relative;
+  padding-bottom: 0.3rem;
 }
 
-/* Hover do menu */
+/* Hover elegante */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
 .nav a:hover {
   color: var(--accent);
+}
+
+/* Página ativa */
+.nav a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.nav a.active::after {
+  width: 100%;
 }
 

@@ -1,23 +1,24 @@
 <!--
-  HEADER FIXO DO SITE
-  Aparece em todas as páginas
+  HEADER FIXO GLOBAL
+  Refinado com estado ativo
 -->
 <header class="site-header">
   <div class="header-container">
 
-    <!-- Logo / Nome do site -->
+    <!-- Logo -->
     <div class="logo">
       <a href="/">Jarvis Black</a>
     </div>
 
-    <!-- Navegação principal -->
+    <!-- Navegação -->
     <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/projetos/">Projetos</a>
-      <a href="/posts/">Posts</a>
-      <a href="/sobre/">Sobre</a>
-      <a href="/contato/">Contato</a>
+      <a href="/" class="{{ if .IsHome }}active{{ end }}">Home</a>
+      <a href="/projetos/" class="{{ if eq .Section "projetos" }}active{{ end }}">Projetos</a>
+      <a href="/posts/" class="{{ if eq .Section "posts" }}active{{ end }}">Posts</a>
+      <a href="/sobre/" class="{{ if eq .Section "sobre" }}active{{ end }}">Sobre</a>
+      <a href="/contato/" class="{{ if eq .Section "contato" }}active{{ end }}">Contato</a>
     </nav>
 
   </div>
 </header>
+
