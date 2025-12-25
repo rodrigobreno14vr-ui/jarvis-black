@@ -1,82 +1,44 @@
 /* =========================
-   HOME – HERO
+   HEADER / MENU FIXO
    ========================= */
 
-.home-hero {
-  max-width: var(--max-width);
-  margin: 3rem auto 4rem auto;
-  padding: 2.5rem;
-  background: linear-gradient(135deg, #0b1220, #020617);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  text-align: center;
+/* Barra superior fixa */
+.site-header {
+  position: sticky;           /* Fica fixa ao rolar */
+  top: 0;
+  z-index: 100;
+  background: rgba(2, 6, 23, 0.95);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(6px);
 }
 
-.home-hero h1 {
-  font-size: 2.6rem;
-  margin-bottom: 1rem;
-}
-
-.home-subtitle {
-  color: var(--muted);
-  font-size: 1.2rem;
-}
-
-/* =========================
-   HOME – CONTEÚDO
-   ========================= */
-
-.home-section {
+/* Container central */
+.header-container {
   max-width: var(--max-width);
   margin: 0 auto;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 2.5rem;
+  padding: 1rem 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* =========================
-   LISTA DE POSTS
-   ========================= */
-
-.post-list {
-  display: grid;
-  gap: 2rem;
+/* Logo */
+.logo a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f9fafb;
 }
 
-.post-card {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.8rem;
-}
-
-.post-card h2 {
-  margin-top: 0;
-}
-
-.post-card p {
+/* Navegação */
+.nav a {
+  margin-left: 1.2rem;
+  font-size: 0.95rem;
   color: var(--muted);
 }
 
-.post-card a {
-  font-weight: 600;
-}
-
-/* =========================
-   POST INDIVIDUAL
-   ========================= */
-
-.post-editorial {
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.post-content {
-  margin-top: 2rem;
-}
-
-.post-content p {
-  margin: 1.2rem 0;
+/* Hover do menu */
+.nav a:hover {
+  color: var(--accent);
 }
 

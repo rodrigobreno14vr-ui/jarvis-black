@@ -18,27 +18,13 @@
 
 <body>
 
-<header class="site-header">
-  <nav class="nav">
-    <a href="/" class="logo">
-      {{ partial "logo.html" . }}
-    </a>
+{{ partial "header.html" . }}
 
-    <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/posts/">Posts</a>
-    </div>
-  </nav>
-</header>
-
-<main class="site-main">
+<main>
   {{ block "main" . }}{{ end }}
 </main>
 
-<footer class="site-footer">
-  © {{ now.Year }} {{ .Site.Title }} — Construindo sistemas reais.
-</footer>
-
 </body>
+
 </html>
 

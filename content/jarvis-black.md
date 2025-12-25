@@ -2,18 +2,47 @@
 title: "Jarvis Black"
 ---
 
-## Jarvis Black
+## 🧩 Jarvis Black
 
-Página do projeto **em reconstrução**.
-
-Esta versão foi criada para:
-- eliminar conflitos de layout
-- manter o site estável
-- permitir evolução tranquila
-
-Conteúdo detalhado será adicionado futuramente.
+O **Jarvis Black** é um projeto de site estático profissional, criado para demonstrar como construir **sites rápidos, seguros e fáceis de manter**, sem WordPress e sem banco de dados.
 
 ---
 
-👉 [← Voltar para Home](/)
+## 🎯 Objetivo do Projeto
+
+- Criar uma base sólida para sites institucionais
+- Garantir alta performance
+- Facilitar manutenção
+- Servir como vitrine profissional freelancer
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Hugo (gerador de sites estáticos)
+- HTML5 semântico
+- CSS moderno e leve
+- Git e GitHub
+- Linux
+
+---
+
+## 📌 Status Atual
+
+🟢 **Em desenvolvimento ativo**
+
+Este próprio site é o projeto rodando em tempo real.
+
+---
+
+## 🚀 Próximos Passos
+
+- Página de serviços
+- SEO técnico
+- Deploy público
+- Automação de build
+
+---
+
+👉 **Projeto real, código real, aprendizado real.**
 
