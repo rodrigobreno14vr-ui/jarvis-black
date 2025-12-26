@@ -139,3 +139,83 @@
   box-shadow: 0 12px 32px rgba(0,0,0,0.1);
 }
 
+/* =========================
+   CASE DE PROJETO
+   ========================= */
+
+.case-hero {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.case-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.case-tagline {
+  font-size: 1.1rem;
+  color: #475569;
+}
+
+.case-section {
+  margin: 2.5rem 0;
+}
+
+.case-section h2 {
+  margin-bottom: 0.8rem;
+}
+
+.case-section ul {
+  padding-left: 1.2rem;
+}
+
+.case-tech {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+}
+
+.case-tech li {
+  background: #f1f5f9;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.case-status {
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* CTA FINAL */
+.case-cta {
+  margin: 4rem 0 2rem;
+  padding: 2rem;
+  background: #020617;
+  color: #f8fafc;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.case-cta h2 {
+  margin-bottom: 0.5rem;
+}
+
+.case-cta p {
+  color: #cbd5f5;
+  margin-bottom: 1.2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
