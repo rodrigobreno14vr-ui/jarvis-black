@@ -1,0 +1,15 @@
+<!--
+  CARD DE PROJETO
+  Recebe: .Title | .RelPermalink | .Params.description
+-->
+<article class="project-card">
+  <a href="{{ .RelPermalink }}">
+    <h3>{{ .Title }}</h3>
+
+    {{ with .Params.description }}
+      <p>{{ . }}</p>
+    {{ end }}
+
+    <span class="project-link">Ver projeto →</span>
+  </a>
+</article>

@@ -1,14 +1,18 @@
 {{ define "main" }}
 
-<section class="home-hero">
-  <h1>{{ .Title }}</h1>
-  <p class="home-subtitle">
-    Sites rápidos, simples e sob controle.
-  </p>
+<section class="home-hero container">
+  <h1>{{ .Site.Title }}</h1>
+  <p>{{ .Site.Params.tagline }}</p>
 </section>
 
-<section class="home-section">
-  {{ .Content }}
+<section class="home-projects container">
+  <h2>Projetos</h2>
+
+  <div class="projects-grid">
+    {{ range where .Site.RegularPages "Section" "projetos" }}
+      {{ partial "project-card.html" . }}
+    {{ end }}
+  </div>
 </section>
 
 {{ end }}

@@ -46,3 +46,7 @@ Este próprio site é o projeto rodando em tempo real.
 
 👉 **Projeto real, código real, aprendizado real.**
 
+---
+title: "Jarvis Black"
+description: "Site estático profissional criado com Hugo, focado em performance e simplicidade."
+---

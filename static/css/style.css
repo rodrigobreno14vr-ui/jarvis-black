@@ -76,3 +76,51 @@
 .page-services h2 {
   margin-top: 2.5rem;
 }
+/* =========================
+   CARDS DE PROJETOS
+   ========================= */
+
+.home-projects {
+  margin-top: 4rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card a {
+  display: block;
+  padding: 1.5rem;
+  color: #020617;
+}
+
+.project-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.project-card .project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
