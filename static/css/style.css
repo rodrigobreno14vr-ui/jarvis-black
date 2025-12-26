@@ -77,12 +77,8 @@
   margin-top: 2.5rem;
 }
 /* =========================
-   CARDS DE PROJETOS
+   CARDS DE PROJETOS – V2
    ========================= */
-
-.home-projects {
-  margin-top: 4rem;
-}
 
 .projects-grid {
   display: grid;
@@ -92,9 +88,11 @@
 }
 
 .project-card {
+  position: relative;
   background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  border-radius: 10px;
+  overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -106,6 +104,7 @@
 
 .project-card h3 {
   margin: 0 0 0.5rem;
+  font-size: 1.2rem;
 }
 
 .project-card p {
@@ -113,14 +112,30 @@
   color: #475569;
 }
 
-.project-card .project-link {
+/* Badge de status */
+.project-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #0ea5e9;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* Link */
+.project-link {
   display: inline-block;
   margin-top: 1rem;
   font-weight: 600;
   color: #2563eb;
 }
 
+/* Hover */
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
 }
+

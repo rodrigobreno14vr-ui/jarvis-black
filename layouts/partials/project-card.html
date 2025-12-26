@@ -1,8 +1,18 @@
 <!--
-  CARD DE PROJETO
-  Recebe: .Title | .RelPermalink | .Params.description
+  CARD DE PROJETO (VITRINE)
+  Campos usados:
+  - .Title
+  - .Params.description
+  - .Params.status
+  - .RelPermalink
 -->
+
 <article class="project-card">
+
+  {{ with .Params.status }}
+    <span class="project-badge">{{ . }}</span>
+  {{ end }}
+
   <a href="{{ .RelPermalink }}">
     <h3>{{ .Title }}</h3>
 
@@ -10,6 +20,8 @@
       <p>{{ . }}</p>
     {{ end }}
 
-    <span class="project-link">Ver projeto →</span>
+    <span class="project-link">Ver detalhes →</span>
   </a>
+
 </article>
+

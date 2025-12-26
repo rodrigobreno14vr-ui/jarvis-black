@@ -1,6 +1,10 @@
 ---
 title: "Jarvis Black"
 ---
+description: "Site estático profissional criado com Hugo, focado em performance, simplicidade e controle total."
+status: "Em desenvolvimento"
+---
+
 
 ## 🧩 Jarvis Black
 
